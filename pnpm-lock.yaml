@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@tsconfig/recommended':
+        specifier: ^1.0.3
+        version: 1.0.3
       jest:
         specifier: ^29.7.0
         version: 29.7.0
@@ -15,7 +18,11 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  packages/core: {}
+  packages/core:
+    dependencies:
+      acorn:
+        specifier: ^8.10.0
+        version: 8.10.0
 
 packages:
 
@@ -632,6 +639,10 @@ packages:
       '@sinonjs/commons': 3.0.0
     dev: true
 
+  /@tsconfig/recommended@1.0.3:
+    resolution: {integrity: sha512-+jby/Guq9H8O7NWgCv6X8VAiQE8Dr/nccsCtL74xyHKhu2Knu5EAKmOZj3nLCnLm1KooUzKY+5DsnGVqhM8/wQ==}
+    dev: true
+
   /@types/babel__core@7.20.3:
     resolution: {integrity: sha512-54fjTSeSHwfan8AyHWrKbfBWiEUrNTZsUwPTDSNaaP1QDQIZbeNUg3a59E9D+375MzUw/x1vx2/0F5LBz+AeYA==}
     dependencies:
@@ -702,6 +713,12 @@ packages:
     dependencies:
       '@types/yargs-parser': 21.0.1
     dev: true
+
+  /acorn@8.10.0:
+    resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: false
 
   /ansi-escapes@4.3.2:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
